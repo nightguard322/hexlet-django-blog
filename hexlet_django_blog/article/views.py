@@ -1,6 +1,10 @@
 from django.shortcuts import render
 from django.http import HttpResponse
+import os
+from django.views.generic import TemplateView
 # Create your views here.
 
-def index(request):
-    return HttpResponse('article')
+class ArticleView(TemplateView):
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        return context
