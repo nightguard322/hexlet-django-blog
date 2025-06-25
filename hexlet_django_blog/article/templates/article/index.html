@@ -4,4 +4,7 @@
 
 {% block content %}
     <h1>Статьи:</h1>
+    {% if article_id %}
+        Статья номер {{ article_id }}. Тег python
+    {% endif %}
 {% endblock %}
