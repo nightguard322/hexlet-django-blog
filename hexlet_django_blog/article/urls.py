@@ -2,12 +2,10 @@ from django.urls import path
 from django.shortcuts import redirect
 
 from hexlet_django_blog.article import views
-from .views import ArticleView
 
+app_name = 'articles'
 urlpatterns = [
-    path(
-        'tags/<int:article_id>/',
-        ArticleView.as_view(template_name='article/index.html'),
-        name='article'
-        ),
+    path('', views.IndexView.as_view(), name='index'),
+    path('<int:article_id>/', views.ArticleView.as_view(), name='show'),
+    path('create/', views.CreateArticleView.as_view(), name='create')
 ]

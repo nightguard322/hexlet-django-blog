@@ -3,8 +3,25 @@
 {% block title %}Статьи{% endblock %}
 
 {% block content %}
-    <h1>Статьи:</h1>
-    {% if article_id %}
-        Статья номер {{ article_id }}. Тег python
+    {% if messages %}
+        <ul class="messages">
+            {% for message in messages %}
+                <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+            {% endfor %}
+        </ul>
     {% endif %}
+    <h1>Статьи:</h1>
+    {% if articles %}
+        {% for article in articles %}
+            <h3>Статья {{ article.name }}.</h3>
+            <p>{{ article.body }}</p>
+            <hr>
+        {% endfor %}
+    {% else %}
+        <h3>Тут пока пусто...</h3>
+    {% endif %}
+    
+    <p>Хотите добавить статью?</p>
+    <a href="{% url 'articles:create' %}">Добавить</a>
+
 {% endblock %}

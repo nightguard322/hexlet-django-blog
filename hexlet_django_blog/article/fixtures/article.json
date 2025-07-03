@@ -1,0 +1,172 @@
+[
+{
+  "model": "article.article",
+  "pk": 1,
+  "fields": {
+    "name": "Article",
+    "body": "Test text",
+    "created_at": "2025-06-29T18:11:48.500Z",
+    "updated_at": "2025-06-30T08:11:03.743Z"
+  }
+},
+{
+  "model": "article.article",
+  "pk": 2,
+  "fields": {
+    "name": "new test article #2",
+    "body": "this is a text of the article2",
+    "created_at": "2025-06-29T18:12:04.024Z",
+    "updated_at": "2025-06-29T18:12:04.024Z"
+  }
+},
+{
+  "model": "article.article",
+  "pk": 3,
+  "fields": {
+    "name": "new test article #3",
+    "body": "this is a text of the article3",
+    "created_at": "2025-06-29T18:12:12.903Z",
+    "updated_at": "2025-06-29T18:12:12.903Z"
+  }
+},
+{
+  "model": "article.article",
+  "pk": 4,
+  "fields": {
+    "name": "new test article #4",
+    "body": "this is a text of the article4",
+    "created_at": "2025-06-29T18:12:25.871Z",
+    "updated_at": "2025-06-29T18:12:25.871Z"
+  }
+},
+{
+  "model": "article.article",
+  "pk": 6,
+  "fields": {
+    "name": "test",
+    "body": "test",
+    "created_at": "2025-07-01T06:41:09.254Z",
+    "updated_at": "2025-07-01T06:41:09.254Z"
+  }
+},
+{
+  "model": "article.article",
+  "pk": 7,
+  "fields": {
+    "name": "test",
+    "body": "test",
+    "created_at": "2025-07-01T06:42:29.527Z",
+    "updated_at": "2025-07-01T06:42:29.527Z"
+  }
+},
+{
+  "model": "article.article",
+  "pk": 8,
+  "fields": {
+    "name": "test",
+    "body": "test",
+    "created_at": "2025-07-01T06:42:30.270Z",
+    "updated_at": "2025-07-01T06:42:30.270Z"
+  }
+},
+{
+  "model": "article.article",
+  "pk": 9,
+  "fields": {
+    "name": "test",
+    "body": "test",
+    "created_at": "2025-07-01T06:42:30.624Z",
+    "updated_at": "2025-07-01T06:42:30.624Z"
+  }
+},
+{
+  "model": "article.article",
+  "pk": 10,
+  "fields": {
+    "name": "test",
+    "body": "test",
+    "created_at": "2025-07-01T06:42:30.824Z",
+    "updated_at": "2025-07-01T06:42:30.824Z"
+  }
+},
+{
+  "model": "article.article",
+  "pk": 11,
+  "fields": {
+    "name": "test",
+    "body": "test",
+    "created_at": "2025-07-01T06:42:30.986Z",
+    "updated_at": "2025-07-01T06:42:30.986Z"
+  }
+},
+{
+  "model": "article.article",
+  "pk": 12,
+  "fields": {
+    "name": "test",
+    "body": "test",
+    "created_at": "2025-07-01T06:42:31.131Z",
+    "updated_at": "2025-07-01T06:42:31.131Z"
+  }
+},
+{
+  "model": "article.article",
+  "pk": 13,
+  "fields": {
+    "name": "test",
+    "body": "test",
+    "created_at": "2025-07-01T06:42:43.207Z",
+    "updated_at": "2025-07-01T06:42:43.207Z"
+  }
+},
+{
+  "model": "article.article",
+  "pk": 14,
+  "fields": {
+    "name": "test",
+    "body": "test",
+    "created_at": "2025-07-01T06:43:21.473Z",
+    "updated_at": "2025-07-01T06:43:21.473Z"
+  }
+},
+{
+  "model": "article.article",
+  "pk": 15,
+  "fields": {
+    "name": "test",
+    "body": "test",
+    "created_at": "2025-07-01T06:43:46.673Z",
+    "updated_at": "2025-07-01T06:43:46.673Z"
+  }
+},
+{
+  "model": "article.article",
+  "pk": 16,
+  "fields": {
+    "name": "test",
+    "body": "test",
+    "created_at": "2025-07-01T06:43:47.384Z",
+    "updated_at": "2025-07-01T06:43:47.384Z"
+  }
+},
+{
+  "model": "article.article",
+  "pk": 17,
+  "fields": {
+    "name": "test",
+    "body": "test",
+    "created_at": "2025-07-01T06:43:47.584Z",
+    "updated_at": "2025-07-01T06:43:47.584Z"
+  }
+},
+{
+  "model": "article.article",
+  "pk": 18,
+  "fields": {
+    "name": "Тестовая статья",
+    "body": "Добавляем...",
+    "created_at": "2025-07-01T06:44:00.149Z",
+    "updated_at": "2025-07-01T06:44:00.149Z"
+  }
+}
+]
