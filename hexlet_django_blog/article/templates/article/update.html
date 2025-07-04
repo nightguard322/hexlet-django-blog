@@ -3,8 +3,9 @@
 {% block title %}{{ article.name }}{% endblock %}
 
 {% block content %}
-    <form action="{% url 'articles:create' %}" method="post">
+{{ article_id }}
+    <form action="{% url 'articles:update' article_id=article_id %}" method="post">
         {% include 'article/form.html' %}
-        <input type="submit" value="Отправить">
+        <input type="submit" value="Обновить">
     </form>
 {% endblock %}

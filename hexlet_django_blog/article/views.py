@@ -54,15 +54,42 @@ class CreateArticleView(View):
             'article/create.html',
             context = {'form': form})
 
-# class EditArticleView(View):
-#     def get(self, request, *args, **kwargs):
-#         article_id = kwargs['id']
-#         current = get_object_or_404(Article, pk=article_id)
-#         form = ArticleForm(request.POST)
-#             redirect('articles:index')
+class ArticleFormEditView(View):
+    def post(self, request, *args, **kwargs):
+        article_id = kwargs['article_id']
+        article = get_object_or_404(Article, id=article_id)
+        form = ArticleForm(request.POST, instance=article)
+        if form.is_valid():
+            form.save()
+            messages.success(request, "Article successfully added.")
+            return redirect('articles:index')
+        return render(
+            request,
+            'article/update.html',
+            context = {
+                'form': form,
+                'article_id': article_id
+            })
+            
 
-    
-#         return render(
-#             request,
-#             'article/show.html',
-#             context = {'article': current})
+    def get(self, request, *args, **kwargs):
+        article_id = kwargs['article_id']
+        article = get_object_or_404(Article, id=article_id)
+        form = ArticleForm(instance=article)
+        return render(
+            request,
+            'article/update.html',
+            context = {
+                'form': form,
+                'article_id': article_id
+            })
+
+
+class ArticleFormDeleteView(View):
+
+    def post(self, request, *args, **kwargs):
+        article_id = kwargs['article_id']
+        article = Article.objects.get(id=article_id)
+        if article:
+            article.delete()
+        return redirect('articles:index')
